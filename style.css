@@ -88,3 +88,22 @@ footer {
   font-size: 0.9em;
   color: #777;
 }
+
+/* Styling prototype*/
+#prototype-images p {
+  margin-bottom: 0; /* Remove space below the paragraph */
+}
+
+#prototype-images img {
+  margin-top: 0;     /* Remove space above the image */
+  display: block;
+}
+
+#prototype-video p {
+  margin-bottom: 0;
+}
+
+#prototype-video video {
+  margin-top: 0;
+  display: block;
+}
