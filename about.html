@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head><title>About Us</title></head>
+<head>
+  <div id="navbar"></div>
+  <link rel="stylesheet" href="style.css">
+  <title>About Us</title>
+</head>
 <body>
-  <h1>👥 About Our Team</h1>
+  <h1>About Our Team</h1>
+  <p> Team members: Fan Xinyu, Dawn Aw Tay Rui Qi, Chew Liang Zhi, Elroy Lee, Ng Quan Han, Goh Jia Rui Gary</p>
   <p>We're a group of student designers and developers focused on creating meaningful, low-cost solutions for real-world problems.</p>
   <p><strong>Our Mission:</strong><br>To deliver an accurate, user-centered footfall tracking system that respects the heritage and design of the Kibble Palace.</p>
 </body>
 </html>
+
+<script>
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>

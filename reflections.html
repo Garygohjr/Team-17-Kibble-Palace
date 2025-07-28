@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head><title>Reflections</title></head>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Reflections</title>
+</head>
 <body>
-  <h1>🤔 Reflections</h1>
+  <div id="navbar"></div>
+  <h1>Reflections</h1>
   <h2>Insights from Client Meetings</h2>
   <ul>
     <li>They value <strong>discretion and privacy</strong> more than flashy tech</li>
@@ -15,3 +19,11 @@
   </ul>
 </body>
 </html>
+
+<script>
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>

@@ -1,0 +1,90 @@
+/* Global Styles */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #F9F6EF; /* soft ivory */
+  color: #2F4F4F;            /* deep forest green */
+  margin: 40px auto;
+  max-width: 900px;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  color: #558B6E; /* fern green */
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-top: 0.5em;
+}
+
+h2 {
+  font-size: 1.6em;
+  border-bottom: 2px solid #9CA77D; /* moss green accent */
+  padding-bottom: 4px;
+}
+
+/* Links */
+a {
+  color: #4B4B4B; /* iron grey */
+  text-decoration: none;
+  border-bottom: 1px dotted #9CA77D;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #558B6E;
+  border-bottom: 1px solid #558B6E;
+  background-color: #DDEAD0; /* soft leaf green */
+}
+
+/* Navigation */
+nav {
+  margin: 1.5em 0;
+  padding: 1em;
+  background-color: #EBF3E7; /* light botanical background */
+  border-radius: 10px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* Blockquote */
+blockquote {
+  border-left: 5px solid #9CA77D;
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  font-style: italic;
+  background: #FAFDF8;
+}
+
+/* Image */
+img {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Footer (if you add one later) */
+footer {
+  margin-top: 40px;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+}

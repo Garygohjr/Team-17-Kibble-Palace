@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head><title>Prototype</title></head>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Prototype</title>
+</head>
 <body>
-  <h1>🛠️ Prototype Concepts</h1>
+  <div id="navbar"></div>
+  <h1>Prototype Concepts</h1>
   <p>We explored the use of dual infrared break beam sensors at the entrance to the Kibble Palace.</p>
-  <img src="assets/images/prototype-sketch.png" alt="Lo-fi Sketch">
+  <img src="assets/images/QR-Location-Sketch.jpg" alt = "Lo-fi QR Sketch">
+  <img src="assets/images/Form-Sketch.jpg" alt="Lo-fi Form Sketch">
+  <img src="assets/images/Basic-System-Design.png" alt="Basic-System-Design">
   <ul>
     <li>Direction-aware logic (A → B = entry, B → A = exit)</li>
     <li>Easily hidden in planters or fixtures</li>
@@ -12,3 +18,11 @@
   </ul>
 </body>
 </html>
+
+<script>
+  fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>
