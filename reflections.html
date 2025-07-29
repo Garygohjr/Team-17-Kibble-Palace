@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link rel="stylesheet" href="style.css">
   <title>Reflections</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
   <div id="navbar"></div>
-  <h1>Reflections</h1>
-  <h2>Insights from Client Meetings</h2>
-  <ul>
-    <li>They value <strong>discretion and privacy</strong> more than flashy tech</li>
-    <li>Budget and listed building status drive every decision</li>
-  </ul>
-  <h2>What We Learned from Prototyping</h2>
-  <ul>
-    <li>Our initial solution lacked the capability to track direction of footfall, resulting in high inaccuracy</li>
-    <li>Sketching the flow revealed practical constraints (e.g., group entries, line-of-sight)</li>
-    <li>Paper prototyping allowed for quick sketches to be made, avoiding costly mistakes</li>
-  </ul>
-</body>
-</html>
 
-<script>
-  fetch('nav.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('navbar').innerHTML = data;
-    });
-</script>
+  <main>
+    <div class="content-section">
+      <h1>Reflections</h1>
+
+      <h2>Insights from Client Meetings</h2>
+      <ul>
+        <li>They value <strong>discretion and privacy</strong> more than flashy tech</li>
+        <li>Budget and listed building status drive every decision</li>
+      </ul>
+
+      <h2>What We Learned from Prototyping</h2>
+      <ul>
+        <li>Our initial solution lacked the capability to track direction of footfall, resulting in high inaccuracy</li>
+        <li>Sketching the flow revealed practical constraints (e.g., group entries, line-of-sight)</li>
+        <li>Paper prototyping allowed for quick sketches to be made, avoiding costly mistakes</li>
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+</body>
+
+</html>

@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link rel="stylesheet" href="style.css">
   <title>Footfall Tracking in Kibble Palace</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
   <div id="navbar"></div>
-  <h1>Welcome to our Project</h1>
-  <p><strong>Tracking Footfall at the Kibble Palace</strong></p>
-  <p>We explore how low-cost, privacy-safe technology can help Glasgow Botanic Gardens better understand visitor patterns without affecting its heritage charm.</p>
-  <blockquote>"Designing with care for heritage, people, and plants."</blockquote>
-</body>
-</html>
 
-<script>
-  fetch('nav.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('navbar').innerHTML = data;
-    });
-</script>
+  <main>
+    <div class="content-section">
+      <h1>Welcome to our Project</h1>
+      <p><strong>Tracking Footfall at the Kibble Palace</strong></p>
+      <p>We explore how low-cost, privacy-safe technology can help Glasgow Botanic Gardens better understand visitor
+        patterns without affecting its heritage charm.</p>
+      <blockquote>"Designing with care for heritage, people, and plants."</blockquote>
+    </div>
+  </main>
+
+  <script>
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+</body>
+
+</html>
