@@ -286,7 +286,7 @@ video {
   height: auto;
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(85, 139, 110, 0.15);
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
