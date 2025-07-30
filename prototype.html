@@ -12,55 +12,92 @@
   <div id="navbar"></div>
 
   <main>
-    <div class="content-section">
-      <h1>Prototype Concepts</h1>
+    <section class="content-flow">
+      <div class="content-wrapper">
+        <h2>Prototype Concepts</h2>
 
-      <h2>We explored the use of dual infrared break beam sensors at the entrance to the Kibble Palace.</h2>
-      <div id="prototype-video">
-        <p>User flow:</p>
-        <video width="900" height="520" controls>
-          <source src="assets/video/Prototype-1-Clip.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div id="prototype-images">
-        <p>Basic System Design:</p>
-        <img src="assets/images/Basic-System-Design.png" alt="Basic-System-Design">
-      </div>
-      <ul>
-        <li>Direction-aware logic (A → B = entry, B → A = exit)</li>
-        <li>Easily hidden in planters or fixtures</li>
-        <li>No cameras = high privacy compliance</li>
-      </ul>
+        <div class="prototype-content">
+          <h3>Dual Infrared Break Beam Sensors</h3>
+          <p class="large-text">We explored the use of dual infrared break beam sensors at the entrance to the Kibble
+            Palace.</p>
 
-      <h2>To track the country of origin of visitors, we experimented with a QR code linked form</h2>
-      <div id="prototype-images">
-        <p>QR code positioning:</p>
-        <img src="assets/images/QR-Location-Sketch.jpg" alt="Lo-fi QR Sketch">
-        <p>Form Sketch:</p>
-        <img src="assets/images/Form-Sketch.jpg" alt="Lo-fi Form Sketch">
-      </div>
-      <ul>
-        <li>Placed in a easy to spot place</li>
-        <li>Collecting only basic demographic data, no personal or identifiable data</li>
-        <li>Linking to Kibble Palace website for more information</li>
-      </ul>
+          <div class="prototype-section">
+            <div class="prototype-video">
+              <p><strong>User Flow:</strong></p>
+              <video width="100%" height="520" controls>
+                <source src="assets/video/Prototype-1-Clip.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
 
-      <h2>To better visualise the sensor data, we prototyped a dashboard</h2>
-      <div id="prototype-video">
-        <p>Dashboard Prototype:</p>
-        <video width="900" height="520" controls>
-          <source src="assets/video/Dashboard-Prototype.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+          <div class="prototype-section">
+            <div class="prototype-images">
+              <p><strong>Basic System Design:</strong></p>
+              <img src="assets/images/Basic-System-Design.png" alt="Basic-System-Design">
+            </div>
+          </div>
+
+          <div class="features-list">
+            <p><strong>Key Features:</strong></p>
+            <p>Direction-aware logic (A → B = entry, B → A = exit)</p>
+            <p>Easily hidden in planters or fixtures</p>
+            <p>No cameras = high privacy compliance</p>
+          </div>
+
+          <h3>Country of Origin Tracking</h3>
+          <p>To track the country of origin of visitors, we experimented with a QR code linked form.</p>
+
+          <div class="prototype-section">
+            <div class="prototype-images">
+              <p><strong>QR Code Positioning:</strong></p>
+              <img src="assets/images/QR-Location-Sketch.jpg" alt="Lo-fi QR Sketch">
+            </div>
+          </div>
+
+          <div class="prototype-section">
+            <div class="prototype-images">
+              <p><strong>Form Sketch:</strong></p>
+              <img src="assets/images/Form-Sketch.jpg" alt="Lo-fi Form Sketch">
+            </div>
+          </div>
+
+          <div class="features-list">
+            <p><strong>Design Principles:</strong></p>
+            <p>Placed in an easy to spot place</p>
+            <p>Collecting only basic demographic data, no personal or identifiable data</p>
+            <p>Linking to Kibble Palace website for more information</p>
+          </div>
+
+          <h3>Dashboard Prototype</h3>
+          <p>To better visualise the sensor data, we prototyped a dashboard.</p>
+
+          <div class="prototype-section">
+            <div class="prototype-video">
+              <p><strong>Dashboard Prototype:</strong></p>
+              <video width="100%" height="520" controls>
+                <source src="assets/video/Dashboard-Prototype.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+          <div class="features-list">
+            <p><strong>Dashboard Features:</strong></p>
+            <p>Designed with simplicity in mind</p>
+            <p>Provides clear visual overview of visitor patterns and event impact</p>
+            <p>Helps staff make informed decisions about staffing and event scheduling</p>
+          </div>
+        </div>
       </div>
-      <ul>
-        <li>Designed with simplicity in mind</li>
-        <li>Provides clear visual overview of visitor patterns and event impact</li>
-        <li>Helps staff make informed decisions about staffing and event scheduling</li>
-      </ul>
-    </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>© Copyright Team 17 - Kibble Palace Project. All Rights Reserved</p>
+    </div>
+  </footer>
 
   <script>
     fetch('nav.html')
